@@ -90,13 +90,21 @@
         </td>
         <td>
           Los datos quedan guardados localmente y se pueden ver en .gitconfig
+          que se puede ver su ruta con git config --global --list --show-origin
         </td>
       </tr>
       <tr>
         <td>init</td>
-        <td>El comando más importante, indica que el directorio actual será un repositorio</td>
-        <td>Se crea un fichero oculto llamado .git en el directorio actual <br> <br>
-        Cuando se crea por primera vez, se tiene la rama principal master o main</td>
+        <td>
+          El comando más importante, indica que el directorio actual será un
+          repositorio
+        </td>
+        <td>
+          Se crea un fichero oculto llamado .git en el directorio actual <br />
+          <br />
+          Cuando se crea por primera vez, se tiene la rama principal master o
+          main
+        </td>
       </tr>
       <tr>
         <td>git status</td>
@@ -105,23 +113,53 @@
       <tr>
         <td>git add</td>
         <td>Añadir archivos para capturarlos</td>
-        <td>Se puede seleccionar uno por uno de los elemtos o colocar git add . para agregar todo</td>
+        <td>
+          Se puede seleccionar uno por uno de los elemtos o colocar git add .
+          para agregar todo
+        </td>
       </tr>
       <tr>
         <td>git commit -m "nombre de la version"</td>
-        <td> los commits son lo más fundamental de git, estos son los que capturan y guardan los elementos con un hash único</td>
+        <td>
+          los commits son lo más fundamental de git, estos son los que capturan
+          y guardan los elementos con un hash único
+        </td>
       </tr>
       <tr>
         <td>git checkout ...</td>
-        <td>Vuelve a los valores del último commit guardado de un archivo en concreto</td>
+        <td>
+          Vuelve a los valores del último commit guardado de un archivo en
+          concreto
+        </td>
       </tr>
       <tr>
-        <td>git reset</th>
+        <td>git reset</td>
         <td>Sirve para deshacer commits y ramas completas</td>
+      </tr>
+      <tr>
+        <td>alias.</td>
+        <td>Un alias es super útil para recortar muchos comandos seguidos</td>
+        <td>
+          Por ejemplo. Si se quiere acortar la linea: git log --graph <br />
+          Se coloca de forma global: git config --global alias.arbolFlujo "log
+          --graph" <br />
+          y solo se escribiria git arbolFlujo
+        </td>
+      </tr>
+      <tr>
+        <td>.gitignore</td>
+        <td>Aunque no sea un comando, este archivo es esencial para archivos residuales o que no querramos subir</td>
+        <td>Ya creado el .gitignore en el repositorio se pone **/.. para poner extesiones o nombres de archivos a ignorar</td>
       </tr>
     </table>
     <h2>Ramas en git</h2>
-    <p> Las ramas, como su nombre indica, son separaciones. Aquí se habla del concepto de flujo </p>
-    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DhagidpZutkaCmAZobmzDQ.png" alt="">
+    <p>
+      Las ramas, como su nombre indica, son separaciones. Aquí se habla del
+      concepto de flujo
+    </p>
+    <img
+      src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DhagidpZutkaCmAZobmzDQ.png"
+      alt=""
+    />
   </body>
 </html>
