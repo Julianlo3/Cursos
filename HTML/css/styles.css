@@ -1,0 +1,107 @@
+*{
+    margin: none;
+    padding: none;
+}
+body{
+    background-color: #8EACCD;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 25px;
+    color: #FFFF;
+}
+.imagen{
+    display: block;
+    margin: auto;
+}
+#titulo_principal{
+    padding: 10px;
+    color: #DEE5D4;
+    font-size:60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.boton{
+    text-decoration: none;
+    padding: 30px;
+    background-color: #1E2A5E;
+    color: #FFFF;
+    display: inline-block;
+}
+.botonEncima:hover{
+    background-color: #55679C;
+    border: 5px solid #55679C;
+}
+#menu_navegacion{
+    padding: 15px;
+    list-style-type: none;
+    background-color: #DEE5D4;
+    overflow: hidden;
+    width: 100%;
+}
+.menu_nav_content a{
+    text-decoration: none;
+    font-size: xx-large;
+    text-align: center;
+    padding: 15px;
+}
+.menu_nav_recuadro li{
+    float: left;
+    border-right: 2px solid #8EACCD;
+}
+
+.menu_nav_encima a:hover{
+background-color: #8EACCD;
+}
+.titulo_general{
+    color: #DEE5D4;
+    text-align: center;
+}
+table.tabla_general{
+    width: 100%;
+}
+.tabla_general th, .tabla_general td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+.tabla_general caption{
+    font-size: 30px;
+    padding: 10px;
+    background-color: #DEE5D4;
+}
+tr:nth-child(even){
+    background-color: #DEE5D4;
+    }
+tr:nth-child(odd){
+    background-color: #FFFF;
+    }
+
+.ejemploListaPerso li{
+    list-style-type: none;
+}
+.ejemploListaPerso li::before{
+    content: "(texto agregado antes) ";
+    color: red;
+}
+.ejemploListaPerso li::after{
+    content: " (texto agregado despues) ";
+    color: blue;
+}
+.ejemploDiv{
+    background-color: #1E2A5E;
+    border: 10px solid  #FFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ejemploDiv h1{
+    color: #FFFF;
+    text-align: center;
+}
+.pClases{
+    background-color: black;
+    color: wheat;
+}
+.marco{
+    border: 3px solid black;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatbile" content="IE-edge" />
+    <title>CURSO DE HTML</title>
+    <link rel="stylesheet" href="css/styles.css" >
+  </head>
+  <body>
+    <h1 id="titulo_principal">ELEMENTOS BÁSICOS DE HTML - Inicio</h1>
+    <ul
+      id="menu_navegacion"
+      class="menu_nav_encima menu_nav_content menu_nav_recuadro"
+    >
+      <li>
+        <a href="./index.html"> Inicio </a>
+      </li>
+      <li>
+        <a href="./Tablas/Tablas.html"> Tablas y listas </a>
+      </li>
+      <li>
+        <a href="./Inline y block/InlineDivs.html"> Inline,DIV y clases e id </a>
+      </li>
+    </ul>
+    <h1 class="titulo_general">TEXTOS BÁSICOS</h1>
+    <table class="tabla_general">
+      <caption>
+        Elementos esenciales para la creación de una página básica
+      </caption>
+      <tr>
+        <th>Elemento</th>
+        <th>Descripción</th>
+        <th>Etiquetas que se relacionan</th>
+        <th>Otra información</th>
+      </tr>
+      <tr>
+        <td>h1,h2,h3,...,hn</td>
+        <td>
+          Se usa para los titulos, y va en cascada, h1 es más grande que h2 y
+          así
+        </td>
+        <td rowspan="2">
+          br <br />
+          (Separador de linea) <br />
+          pre <br />
+          ( Es como p pero este deja tal cual se escribe con espacios)
+          <pre>
+            b ( <b>Negrita</b>)
+            strong (<strong>Es como b pero con prioridad</strong> )
+            i (<i>Texto en cursiva ulala</i>)
+            em (<em>Enfatizar es como i pero con prioridad</em>)
+            small (<small>Texto pequeño</small>)
+            mark (<mark>Texto marcado</mark>)
+            del (<del>Texto tachado</del>)
+            ins (<ins>Texto con linea abajo</ins>)
+            sub y sup (Texto<sub>con subindice</sub> y texto <sup>con superindice</sup>)
+            code (<code>Texto en formato de código</code>)
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td>Se usa para los parrafos</td>
+      </tr>
+      <tr>
+        <td>hr</td>
+        <td>Pone una linea horizontal a modo de separador</td>
+      </tr>
+      <tr>
+        <td>css básico</td>
+        <td>Estilo en cascada que se usa para darle diseño a la página</td>
+        <td>
+          <pre>
+          text-alight (<span style="text-align: left;">Permite cambiar la posición del texto</span>)
+          color (<span style="color: blue;"><Data></Data>a color al texto</span>)
+          background-color (<span style="background-color: aquamarine;">Da color al fondo</span>)
+          font-family (<span style="font-family: fantasy">Permite cambiar el tipo de letra</span>)
+          font-size (<span style="font-size: 8px;">Permite cambiar el tamaño de letra</span>)
+          border (<span style="border: 2px solid blue;">Permite bordear</span>)
+          padding y margin ( Permite colocar un espacio al rededor, una margen)
+        </pre>
+        </td>
+        <td>
+          Es recomendable usar un archivo aparte .css que se enlaza con link
+          href y rel="stylesheet"
+        </td>
+      </tr>
+      <tr>
+        <td>a - anclaje - Hipervinculos sencillos</td>
+        <td>
+          Los hipervinculos se pueden manejar tanto locales como por direcciones
+          de internet
+        </td>
+        <td>
+          Se usa con a y href
+          <a href="#titulo_principal" target="_blank">Abrir esta página</a>
+        </td>
+        <td>
+          Se puede usar el atributo target="_blank" para abrir en una nueva
+          ventana.<br />
+          Además se puede mover por la página mediante los id de CSS usando
+          href="#.."
+        </td>
+      </tr>
+      <tr>
+        <td>img - src- Imagenes</td>
+        <td>
+          Para las imagenes se usa img y src que es la fuente de donde proviene
+          la imagen, se puede tanto local como en internet
+        </td>
+        <td>
+          <img
+            src="Imagenes/html5.png"
+            alt="Logo de HTML"
+            title="Logo de HTML"
+            width="100px"
+          />
+        </td>
+        <td>
+          <pre>
+            alt ( texto alternativo cuando la imagen no carga)
+            title ( texto cuando se pasa el mouse por encima)
+            with ( tamaño de la imagen)
+        </pre
+          >
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <h1>Padding, Border y Margin</h1>
+    <p>
+      Tener en cuenta que estas separaciones tienen un orden: TOP,RIGHT,BOTTOM Y
+      LEFT
+    </p>
+    <img
+      class="imagen"
+      src="https://www.avajava.com/tutorials/cascading-style-sheets/how-are-margins-borders-padding-and-content-related/how-are-margins-borders-padding-and-content-related-01.gif"
+      alt="Imagen de referencia Padding,Border y Margin"
+      title="Imagen de HTML referente a las margenes"
+      width="500px"
+    />
+    <hr />
+    <h1>Botones e imagenes con links</h1>
+    <p>
+      Se puede crear botones haciendo uso de CSS y esto se puede aplicar también
+      con imagenes
+    </p>
+    <a
+      class="boton botonEncima"
+      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      alt="Video de prueba de botones"
+      title="Botón"
+      target="_blank"
+    >
+      Probar botón
+    </a>
+    <a
+      class="botonEncima"
+      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      target="_blank"
+    >
+      <img
+        src="./Imagenes/css3.png"
+        alt="Video de prueba"
+        title="Video de prueba"
+      />
+    </a>
+    <h1 class="titulo_general">Parte de iFrames</h1>
+    <p>
+      Un iframe es un ventana redimencionable para cargar una página, video,
+      imagen etc.
+    </p>
+    <iframe
+      class="marco"
+      src="./Imagenes/css3.png"
+      name="marco1"
+      height="400px"
+      width="100%"
+    ></iframe>
+    <p>
+      Se puede cargar con un botón cosas diferentes al iframe. Se coloca un name
+      al iframe y con target
+    </p>
+    <a
+      class="boton botonEncima"
+      href="https://giphy.com/embed/d7rvF20PqNuGKSQGhf"
+      target="marco1"
+    >
+      Cargar video al iframe
+    </a>
+  </body>
+</html>

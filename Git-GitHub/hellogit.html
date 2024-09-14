@@ -136,6 +136,9 @@
           Vuelve a los valores del último commit guardado de un archivo en
           concreto
         </td>
+        <td>
+          Una forma fácil de ver el hash del commit es con git log --oneline
+        </td>
       </tr>
       <tr>
         <td>git reset</td>
@@ -173,6 +176,21 @@
           git diff para ver que se agregó o quitó de los archivos
         </td>
       </tr>
+      <tr>
+        <td>git reset --hard y gir reflog</td>
+        <td>
+          El git reset --hard sirve para volver a un commit y desde ese commit,
+          los siguientes que estén despues de él se eliminen
+        </td>
+        <td>
+          Se puede volver a un commit borrado con la misma técnica, pero usando
+          el log completo que es git reflog que muestra todo
+        </td>
+      </tr>
+      <tr>
+        <td>git tag</td>
+        <td>Una simple etiqueta a un commit</td>
+      </tr>
     </table>
     <h2>Ramas en git</h2>
     <p>
@@ -183,5 +201,92 @@
       src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DhagidpZutkaCmAZobmzDQ.png"
       alt=""
     />
+    <table class="tablaInformativa">
+      <caption>
+        Conceptos y comandos de las ramas
+      </caption>
+      <tr>
+        <th>comando/concepto</th>
+        <th>Descripción</th>
+        <th>Otra información</th>
+      </tr>
+      <tr>
+        <td>git branch ...</td>
+        <td>Con branch se crea una nueva rama.</td>
+      </tr>
+      <tr>
+        <td>git switch ...</td>
+        <td>Cambio de rama</td>
+      </tr>
+      <tr>
+        <td>git merge ...</td>
+        <td>
+          Cuando se están en ramas y se quieren traer los cambios de un commit.
+          Se traen los datos de los archivos
+        </td>
+        <td>
+          Tener en cuenta los conflictos, dos personas no pueden editar el mismo
+          archivo y la misma linea de código
+        </td>
+      </tr>
+
+      <tr>
+        <td>git stash</td>
+        <td>
+          No hacer un commit, una copia en el repositorio, guarda los archivos
+          de manera local.Esto con el fin de si se esta en una rama y se cambia
+          a otra no se pierdan los cambios que se hayan hecho
+        </td>
+        <td>
+          <ul>
+            <li>git stash list - ver los cambios guardados en stash</li>
+            <li>git stash pop - traer los cambios que se guardaron</li>
+            <li>git stash drop - borrar los stash</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>git branch -d ...</td>
+        <td>
+          Se eliminan las ramas. Esto se hace porque una rama es algo temporal.
+          Cuando ya se acaba la creación de la función se pasa al main y esta
+          queda sin hacer nada.
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <h2>
+      Git-Hub
+      <img
+        class="logo"
+        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        alt="Logo de GitHub"
+      />
+    </h2>
+    <p>
+      Plataforma que se usa con git pero en la nube, se usa para el trabajo en
+      equipo. Resumen de los comandos básicos:
+    </p>
+    <a
+      href="https://training.github.com/downloads/es_ES/github-git-cheat-sheet/"
+      target="_blank"
+    >
+      <img
+        width="300px"
+        src="https://www.agile-tools.co.uk/wp-content/uploads/2023/06/github.jpg"
+        alt="Resumen de comandos git y github"
+        title="Resumen de comandos git y github"
+    /></a>
+    <h2>Subir proyecto a gitHub</h2>
+    <p>Para enlazar el proyecto local y el proyecto en la nube (gitHub) se puede hacer dos cosas:
+      <ol style="text-align:left;">
+        <li>
+          Descargar gitHub desktop y hacerlo todo automatico
+        </li>
+        <li>
+          Si ya se tiene un git creado, se debe usar el agento SSH. siguiendo la guía: <a style="color: aliceblue;" href="https://docs.github.com/es/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding"> Guia para HSS</a>
+        </li>
+      </ol>
+    </p>
   </body>
 </html>

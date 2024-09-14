@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline y block</title>
+    <link rel="stylesheet" href="../css/styles.css" >
+  </head>
+  <body>
+    <h1 id="titulo_principal">
+      ELEMENTOS BÁSICOS DE HTML - Inline,DIV y clases e id
+    </h1>
+    <ul
+      id="menu_navegacion"
+      class="menu_nav_encima menu_nav_content menu_nav_recuadro"
+    >
+      <li>
+        <a href="../index.html"> Inicio </a>
+      </li>
+      <li>
+        <a href="../Tablas/Tablas.html"> Tablas y listas </a>
+      </li>
+      <li>
+        <a href="../Inline y block/InlineDivs.html"> Inline,DIV y clases e id </a>
+      </li>
+    </ul>
+    <h1 class="titulo_general">Inline</h1>
+    <p>
+      Se pueden modificar un parrafo, titulo o algo en la misma linea usando
+      span.
+    </p>
+    <p>
+      Por ejemplo:
+      <span style="color: black; border: 2px solid red">
+        esto sera modificado</span
+      >
+      esto no sera modificado
+    </p>
+    <div class="ejemploDiv">
+      <h1>DIVS</h1>
+      <p>
+        Los divs son bloques, ocupan su propio espacio y no pueden meterse
+        dentro de otro como el span <br />
+        Esto es muy útil para dividir secciones de la página y hacer cambios en
+        CSS mediante los id y clases
+      </p>
+    </div>
+    <h1 class="titulo_general">Clases e id</h1>
+    <p class="pClases">
+      Las clases son de mucha ayuda a la hora de de usar CSS, estas se aplican a
+      cualquier etiqueta class="..." y en CSS con .(nombreClase) <br />
+      Se puede aplicar a una etiqueta en concreto y una clase por ejemplo:
+      .tablaGeneral th --> esto aplicará el CSS solo a los th con clase
+      tablaGeneral <br />
+      Los id son similares a las clases pero estas son de elementos únicos se
+      usa con id='..' y en CSS #(nombre), tales como titulo general, con esto
+      uno puede ir navengando en la misma página usando href
+    </p>
+    <a class="boton botonEncima" href="#titulo_principal">
+      Ir al principio de la página</a
+    >
+  </body>
+</html>

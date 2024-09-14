@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas y listas en HTML</title>
+    <link rel="stylesheet" href="../css/styles.css" >
+  </head>
+  <body>
+    <h1 id="titulo_principal">ELEMENTOS BÁSICOS DE HTML - Tablas</h1>
+    <ul
+      id="menu_navegacion"
+      class="menu_nav_encima menu_nav_content menu_nav_recuadro"
+    >
+      <li>
+        <a href="../index.html"> Inicio </a>
+      </li>
+      <li>
+        <a href="../Tablas/Tablas.html"> Tablas y listas </a>
+      </li>
+      <li>
+        <a href="../Inline y block/InlineDivs.html"> Inline,DIV y clases e id </a>
+      </li>
+    </ul>
+    <h1 id="titulo_principal">Tablas en HTML</h1>
+    <table class="tabla_general">
+      <caption>
+        Etiquetas básicas para creación de tabla
+      </caption>
+      <tr>
+        <th>Etiqueta</th>
+        <th>Descripción</th>
+        <th>Complementos</th>
+      </tr>
+      <tr>
+        <td>caption</td>
+        <td>se usa para poner titulo de la tabla arriba</td>
+        <td>se pone despues de la etiqueta caption</td>
+      </tr>
+      <tr>
+        <td>table</td>
+        <td>Se usa para creación de tablas</td>
+        <td>tr,th,td</td>
+      </tr>
+      <tr>
+        <td>tr</td>
+        <td>se usa para crear unan nueva fila <---></td>
+        <td>th y td</td>
+      </tr>
+      <tr>
+        <td>th</td>
+        <td>Se usa para crear los encabezados</td>
+        <td>td</td>
+      </tr>
+      <tr>
+        <td>td</td>
+        <td>se usa para poner datos dentro de la casilla</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tabla_general">
+      <caption>
+        Como se unen columnas
+      </caption>
+      <tr>
+        <th colspan="2">COLUMNA UNIDA</th>
+        <th>COLUMNA SEPARADA</th>
+        <th>Como se hizo</th>
+      </tr>
+      <tr>
+        <td>esta columna esta unida</td>
+        <td>cesta columna esta unida</td>
+        <td>columna separada</td>
+        <td>Esto se hizo mediante el atributo colspan</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tabla_general">
+      <caption>
+        Como se unen las filas
+      </caption>
+      <tr>
+        <th>COLUMNA 1</th>
+        <th>COLUMNA 2</th>
+        <th>Como se hizo</th>
+      </tr>
+      <tr>
+        <td>Fila normal 1</td>
+        <td>Fila normal 2</td>
+        <td rowspan="2">esto se hizo mediante el atributo rowspan</td>
+      </tr>
+      <tr>
+        <td>Fila normal 1</td>
+        <td>Fila normal 2</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tabla_general">
+      <caption>
+        Listas no ordenadas, ordenadas y de descripción
+      </caption>
+      <tr>
+        <th>Tipo de lista</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+        <th>Otra información</th>
+      </tr>
+      <tr>
+        <td>No ordenada</td>
+        <td>Este tipo de lista, se crea tal cual se pone. Se crea con ul,li</td>
+        <td>
+          <ul>
+            <li>Esta es una</li>
+            <li>lista no ordenada</li>
+            <li>
+              Se puede
+              <ul>
+                <li>concatenar listas, esto son</li>
+                <ul>
+                  <li>listas enlazadas</li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td rowspan="2">
+          Se puede cambiar los estilos de las viñetas con list-style-type. Con
+          este tipo se hizo el menú de navegacion de arriba.Se puede cambiar que
+          se muestra antes con :before y despues con:after de lo que muestran
+        </td>
+      </tr>
+      <tr>
+        <td>Listas ordenadas</td>
+        <td>
+          Estas listas como su nombre indica, son ordenadas, se pone
+          automaticamente un indice Se usa ol y li.
+        </td>
+        <td>
+          <ol>
+            <li>Listando el 1</li>
+            <li>listando el 2</li>
+            <li>listando el 3</li>
+            <li>
+              <ol>
+                <li>Listando una lista ordenada enlzada 1</li>
+                <li>Listando una lista ordenada enlazada 2</li>
+              </ol>
+            </li>
+          </ol>
+          <ol class="ejemploListaPerso">
+            <li>contenido 1</li>
+            <li>contenido 2</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>Listas de descripción</td>
+        <td>
+          Las listas de descripción dl tienen un titulo dt y una descripción dd
+        </td>
+        <td>
+          <dl>
+            <dt>Titulo de la lista de descripción</dt>
+            <dd>Descripción del elemento deseado</dd>
+          </dl>
+          <dl>
+            <dt>HTML</dt>
+            <dd>Es un lenguaje de etiquetas</dd>
+          </dl>
+        </td>
+      </tr>
+    </table>
+    <hr />
+  </body>
+</html>
