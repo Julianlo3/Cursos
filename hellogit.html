@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de git</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="git">
+    <h1>
+      Curso de git-principios
+      <img
+        class="logo"
+        src="https://avatars.githubusercontent.com/u/18133?s=200&v=4"
+        alt="logo de git"
+      />
+    </h1>
+    <h2>Conceptos básicos</h2>
+    <p>
+      Git es un control de versiones que permite hacer copias de elementos
+      generalmente de código, para guardar un historial.
+      <b>Inventor: Linus Torval</b> <br />
+      <br />
+      Para el manejo de git se hace necesario el control por consola. En git se
+      usa el Git Bash
+    </p>
+    <table class="tablaInformativa">
+      <caption>
+        Comandos bácicos de consola
+      </caption>
+      <tr>
+        <th>Comando</th>
+        <th>Descripción</th>
+        <th>Otra información</th>
+      </tr>
+      <tr>
+        <td>ls</td>
+        <td>Lista los elementos de la carpeta actual</td>
+      </tr>
+      <tr>
+        <td>cd</td>
+        <td>Cambio de directorio (posición)</td>
+        <td>
+          Puede ser posición absoluta (dirección completa) <br />
+          Puede ser relativa
+          <ul>
+            <li>Posición actual ( ./ )</li>
+            <li>Pósición atrás ( cd ..)</li>
+            <li>Cambio posición ( cd directorio/)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>pwd</td>
+        <td>Mostrar toda la ruta del directorio actual</td>
+      </tr>
+      <tr>
+        <td>touch</td>
+        <td>Creación de cualquier archivo: touch "ejemplo.txt"</td>
+      </tr>
+      <tr>
+        <td>mkdir</td>
+        <td>Creación de carpetas</td>
+        <td>
+          Cuando se crea no se cambia automaticamente a la carpeta creada. Toca
+          usar cd
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tablaInformativa">
+      <caption>
+        Comandos básicos de git
+      </caption>
+      <tr>
+        <th>Comando</th>
+        <th>Descripción</th>
+        <th>Otra información</th>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>git config --global user.name "..."</li>
+            <li>git config --global user.email "..."</li>
+          </ul>
+        </td>
+        <td>
+          Estos dos comandos son los primeros pasos para iniciar con git.
+          <b>Siempre se necesita un usuario y un correo</b>
+        </td>
+        <td>
+          Los datos quedan guardados localmente y se pueden ver en .gitconfig
+        </td>
+      </tr>
+      <tr>
+        <td>init</td>
+        <td>El comando más importante, indica que el directorio actual será un repositorio</td>
+        <td>Se crea un fichero oculto llamado .git en el directorio actual <br> <br>
+        Cuando se crea por primera vez, se tiene la rama principal master o main</td>
+      </tr>
+      <tr>
+        <td>git status</td>
+        <td>Sirve para ver el estado actual, ver archivos si han cambiado</td>
+      </tr>
+    </table>
+    <h2>Ramas en git</h2>
+    <p> Las ramas, como su nombre indica, son separaciones. Aquí se habla del concepto de flujo </p>
+    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DhagidpZutkaCmAZobmzDQ.png" alt="">
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.git ,.git h1{
+    background-color: #424874;
+    color: #d6e5e3;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.git h2{
+    text-align: center;
+    color: orangered;
+    background-color: #CACFD6;
+    padding: 10px;
+    border-radius: 10px;
+}
+.git p{
+    color:#D6E5E3;
+    font-size: 25px;
+}
+.logo {
+    width: 50px;
+}
+.tablaInformativa{
+    width: 100%;
+    padding: 10px;
+}
+.tablaInformativa caption{
+    font-size: 25px;
+    font-style:italic;
+}
+.tablaInformativa th{
+    color: orangered;
+}
+
+.tablaInformativa th, .tablaInformativa td{
+    color: black;
+    border-collapse: collapse;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 10px;
+}
+.tablaInformativa tr:nth-child(even){
+    background-color: #A6B1E1;
+    }
+
+.tablaInformativa tr:nth-child(odd){
+        background-color: #D6E5E3;
+    }
