@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios en html</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="tabla_general listaDescri">
+    <h1 id="titulo_principal">Formularios en HTML</h1>
+    <p>
+      Los formularios son información básica de un usuario para, por ejemplo, un
+      login
+    </p>
+    <table>
+      <caption>
+        Etiquetas básicas para los formularios HTML
+      </caption>
+      <tr>
+        <th>Etiqueta</th>
+        <th>Descripción</th>
+        <th>Etiquetas/atributos relacionadas</th>
+        <th>Otra información</th>
+      </tr>
+      <tr>
+        <td>form</td>
+        <td>creación como tal de la tabla, aunque no se visualiza</td>
+        <td>
+          <ul>
+            <li>input</li>
+            <li>Method</li>
+          </ul>
+        </td>
+        <td>El method es como se envia la información, por default es GET que envia directo en la URL.
+            <br> Si se maneja información sensible usar el método POST HTTP
+        </td>
+      </tr>
+      <tr>
+        <td>input id = "..." (el id no es obligatorio pero es recomendable)</td>
+        <td>Especifica que va hacer un espacio para ingresar datos</td>
+        <td>
+          <ul>
+            <li>value=".." - pone valores directamente en los inputs</li>
+            <li>
+              name="..." - se nombra como tal el input para enviar los datos
+            </li>
+            <li>
+              placeholder="..." - texto que viene dentro de los inputs. Esta no
+              se envia
+            </li>
+            <li>required="true" - especificar que un campo es obligatorio</li>
+          </ul>
+        </td>
+        <td>
+          Puede ser de tipo:
+          <ul>
+            <li>button</li>
+            <li>checkbox</li>
+            <li>date</li>
+            <li>datetime</li>
+            <li>email</li>
+            <li>file</li>
+            ...
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>labbel</td>
+        <td>
+          Un labbel es una etiqueta escrita que permite saber que información se
+          va a llenar.
+        </td>
+        <td>
+          <ul>
+            <li>for="..." - relaciona un labbel con el input</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <h1>Ejemplo de form</h1>
+    <form>
+      <label for="inp_Nombre">Nombre: <br /></label>
+      <input
+        type="text"
+        placeholder="Ingrese su nombre"
+        id="inp_Nombre"
+        name="inp_Nombre"
+        required="true"
+      />
+      <br />
+      <label for="inp_Apellido">Apellido: <br /></label>
+      <input
+        type="text"
+        placeholder="Ingrese su apellido"
+        id="inp_Apellido"
+        name="inp_Apellido"
+        required="true"
+      /> <br>
+      <label for="email">Correo electrico</label> <br>
+      <input type="email" id="email" name="email" required="true" placeholder="Ingrese su correo"> <br>
+      <label for="password"> Contraseña: <br></label>
+      <input type="password" id="password" required="true"><br>
+      <label for="edad">Edad</label> <br>
+      <input type="number" name="edad" id="edad">
+      <input type="submit" />
+    </form>
+    <hr>
+    <h1>Methot GET y POST HTTP</h1>
+    <p>El atributo methot hace referencia a como se envia la información. Si se usa GET (default) 
+        la información se enviará directamente en el URL de la página, en cambio con POST se envia usando
+        HTTPS
+    </p>
+    <form method="get">
+        <label for="get">Prueba de información con GET</label>
+        <input type="text" id="get" value="Información Enviada GET" name="pruebaGet">
+        <input type="submit">
+    </form>
+    <br>
+    <form method="post">
+        <label for="post">Prueba de información con POST</label>
+        <input type="text" id="post" value="Información Enviada POST" name="POST">
+        <input type="submit">
+    </form>
+  </body>
+</html>

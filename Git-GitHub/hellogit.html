@@ -278,15 +278,62 @@
         title="Resumen de comandos git y github"
     /></a>
     <h2>Subir proyecto a gitHub</h2>
-    <p>Para enlazar el proyecto local y el proyecto en la nube (gitHub) se puede hacer dos cosas:
-      <ol style="text-align:left;">
-        <li>
-          Descargar gitHub desktop y hacerlo todo automatico
-        </li>
-        <li>
-          Si ya se tiene un git creado, se debe usar el agento SSH. siguiendo la guía: <a style="color: aliceblue;" href="https://docs.github.com/es/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding"> Guia para HSS</a>
-        </li>
-      </ol>
+    <p>
+      Para enlazar el proyecto local y el proyecto en la nube (gitHub) se puede
+      hacer dos cosas:
     </p>
+    <ol style="text-align: left; font-size: 25px">
+      <li>Descargar gitHub desktop y hacerlo todo automatico</li>
+      <li>
+        Si ya se tiene un git creado, se debe usar el agento SSH. siguiendo la
+        guía:
+        <a
+          style="color: aliceblue"
+          href="https://docs.github.com/es/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding"
+        >
+          Guia para HSS</a
+        >
+      </li>
+    </ol>
+    <p>
+      Ya hecho el enlace de HSS si se hizo de forma manual, se crea el
+      repositorio en gitHub y mediante consola y el gitbash se copia el comando
+      que sale en el repositorio de gitHub.
+    </p>
+    <h2>Trabajo remoto</h2>
+    <p>
+      Así como git tiene comandos para el trabajo local, ahora que se tiene el
+      repositorio en GitHub hay otras cosas que tener en cuenta.
+    </p>
+    <table class="tablaInformativa">
+      <caption>
+        Commandos de trabajo remoto
+      </caption>
+      <tr>
+        <th>Comando</th>
+        <th>Descripción</th>
+        <th>Otra información</th>
+      </tr>
+      <tr>
+        <td>git push</td>
+        <td>
+          Aunque se hagan commits, estos se quedan de manera local, para poder
+          subirlos al repositorio de gitHub es necesario el uso de push
+        </td>
+      </tr>
+      <td>git fetch</td>
+      <td>Ver los cambios que se hicieron pero no los trae</td>
+      <tr>
+        <td>git pull</td>
+        <td>
+          Se trae todos los cambios nuevos que hay en el repositorio de gitHub
+        </td>
+        <td> Por defecto se coloca el modo merge, es decir, que agregue directamente al código</td>
+      </tr>
+      <tr>
+        <td>git clone</td>
+        <td>Clona todo los elementos de un repositorio</td>
+      </tr>
+    </table>
   </body>
 </html>

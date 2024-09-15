@@ -57,7 +57,7 @@ background-color: #8EACCD;
     color: #DEE5D4;
     text-align: center;
 }
-table.tabla_general{
+table.tabla_general table{
     width: 100%;
 }
 .tabla_general th, .tabla_general td{
@@ -104,4 +104,12 @@ tr:nth-child(odd){
 }
 .marco{
     border: 3px solid black;
+}
+
+.listaDescri ul{
+    text-align: left;
+}
+
+.listaDescri li{
+    padding: 10px;
 }
